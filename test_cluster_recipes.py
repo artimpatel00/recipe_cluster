@@ -1,16 +1,6 @@
 """
 Unit tests for recipe clustering
 """
-import json
-import pandas as pd
-from typing import List
-from sentence_transformers import SentenceTransformer, util
-import pickle
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
-import glob
-
 from cluster_recipes.cluster_recipes import RecipeCluster
 
 
@@ -18,7 +8,6 @@ def test_import_data():
     """
     Checks df shape is correct after importing
     Checks that given dir is real dir
-    run with python -m pytest
     """
 
     config_dict = {}
